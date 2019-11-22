@@ -53,7 +53,7 @@ def action(msg):
         telegram_bot.sendDocument(chat_id, document=open('/home/pi/WaterFlowMeter/water_flow6.py'))
 
 
-telegram_bot = telepot.Bot('1008010607:AAEZA65QyfFY70fbYMXQU5M13KIA5tkR0cs')
+telegram_bot = telepot.Bot('Your Bot Key HERE')
 print (telegram_bot.getMe())
 
 MessageLoop(telegram_bot, action).run_as_thread()
