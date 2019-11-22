@@ -47,7 +47,7 @@ def action(msg):
     elif command == '/flow':
         telegram_bot.sendMessage(chat_id, str("Last Rotations: ")+str(tel_lastvol)+str("\n\rStart: ")+str(tel_starttime)+str("\n\rEnd: ")+str(tel_endtime)+str("\n\rRefill Interval: ")+str(tel_duration))
 
-telegram_bot = telepot.Bot('1008010607:AAEZA65QyfFY70fbYMXQU5M13KIA5tkR0cs')
+telegram_bot = telepot.Bot('Your Bot Key here')
 print (telegram_bot.getMe())
 
 MessageLoop(telegram_bot, action).run_as_thread()
